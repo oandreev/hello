@@ -10,11 +10,5 @@ matrix:
       env: PPSSPP_BUILD_TYPE=Linux
       
 script:
-  - if [ "$CXX" = "g++" ]; then
-       g++ -v
-    elif [ "$CXX" = "clang" ]; then
-      clang -v
-    fi
-
-
+  - bash travis_script.sh
 
